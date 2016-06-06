@@ -1,0 +1,9 @@
+require 'bundler/setup'
+desc 'starts IRB with email_consumer loaded Ex: rake console'
+task :console do
+  puts "Starting Console..."
+  require 'pry'
+  require_relative 'lib/email_consumer'
+  ARGV.clear
+  Pry.start
+end
