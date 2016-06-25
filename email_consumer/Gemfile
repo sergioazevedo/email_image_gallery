@@ -2,6 +2,7 @@ source "https://rubygems.org"
 ruby "2.3.1"
 gem 'cuba'
 gem 'puma'
+gem 'resque'
 
 group :development, :test do
   gem 'rspec', '~> 3.0'
