@@ -13,7 +13,9 @@ Cuba.define do
               image_path: attachment[:tempfile].path,
               storage_path: 'public/images/upload'
             ).execute
-            EmailConsumer::ScheduleImageToProcess.new(image_path: savedImage[:path]).execute
+            EmailConsumer::ScheduleImageToProcess.new(
+              image_path: savedImage[:path]
+            ).execute
           end
         end
         res.write "OK"
