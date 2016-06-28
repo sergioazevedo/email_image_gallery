@@ -26,4 +26,5 @@ build/
 /public/uploads
 .git_bkp/
 public/cache
+public/images
 *.DS_Store
