@@ -3,8 +3,7 @@ require 'securerandom'
 require 'fileutils'
 
 module EmailConsumer
-  class ImageNotFoundException < Exception; end
-
+  
   class SaveUploadedImage
 
     def initialize(image_path:, storage_path:)
